@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lhl.monitor.dao.TeacherDao">
+    <resultMap id="baseResultMap" type="lhl.monitor.model.Teacher">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="userName" property="userName" jdbcType="VARCHAR" />
+        <result column="description" property="description" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="base_column">
+        id,userName,description
+    </sql>
+    <select id="getTeachers" resultType="lhl.monitor.model.Teacher">
+      SELECT 
+      <include refid="base_column" />
+        from teacher
+    </select>
+</mapper>

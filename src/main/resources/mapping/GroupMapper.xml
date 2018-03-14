@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lhl.monitor.dao.GroupDao">
+    <resultMap id="baseResultMap" type="lhl.monitor.model.Group">
+        <result column="userName" property="userName" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="base_column">
+        name
+    </sql>
+    <select id="getGroups" resultType="lhl.monitor.model.Group">
+        SELECT <include refid="base_column" />
+        from teacher
+    </select>
+</mapper>

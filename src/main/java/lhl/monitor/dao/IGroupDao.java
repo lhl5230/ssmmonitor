@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("groupDao")
-public interface GroupDao {
+public interface IGroupDao {
     List<Group> getGroups();
 }

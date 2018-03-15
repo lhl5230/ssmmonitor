@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lhl.monitor.model.BaseVo">
+    <resultMap id="groupResult" type="lhl.monitor.model.BaseVo">
+        <id property="recId" column="RecId" jdbcType="CHAR"/>
+        <id property="lastModBy" column="LastModBy" jdbcType="VARCHAR"/>
+        <id property="createdBy" column="CreatedBy" jdbcType="VARCHAR"/>
+        <result property="lastModDateTime" column="LastModDateTime" jdbcType="TIMESTAMP" />
+        <result property="createdDateTime" column="CreatedDateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+    <sql id="baseVo_column">
+      recId,lastModDateTime,createdDateTime,lastModBy,createdBy
+    </sql>
+</mapper>

@@ -3,22 +3,49 @@ package lhl.monitor.model;
 import java.util.Date;
 
 public class BaseVo {
-    private String id;
-    private String userName;
+    private String recId;
+    private Date lastModDateTime;
+    private Date createdDateTime;
+    private String lastModBy;
+    private String createdBy;
 
-    public String getId() {
-        return id;
+    public String getRecId() {
+        return recId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRecId(String recId) {
+        this.recId = recId;
     }
 
-    public String getUserName() {
-        return userName;
+    public Date getLastModDateTime() {
+        return lastModDateTime;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setLastModDateTime(Date lastModDateTime) {
+        this.lastModDateTime = lastModDateTime;
+    }
+
+    public Date getCreatedDateTime() {
+        return createdDateTime;
+    }
+
+    public void setCreatedDateTime(Date createdDateTime) {
+        this.createdDateTime = createdDateTime;
+    }
+
+    public String getLastModBy() {
+        return lastModBy;
+    }
+
+    public void setLastModBy(String lastModBy) {
+        this.lastModBy = lastModBy;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
     }
 }

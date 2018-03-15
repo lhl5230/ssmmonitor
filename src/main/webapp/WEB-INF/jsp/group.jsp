@@ -17,16 +17,22 @@
 <body>
 <table class="table table-striped" border="1" cellspacing="0" cellpadding="10">
     <tr class="success">
-        <th>ID</th>
-        <th>UserName</th>
-        <th>Age</th>
+        <th>RecID</th>
+        <th>lastModDateTime</th>
+        <th>createdDateTime</th>
+        <th>lastModBy</th>
+        <th>createdBy</th>
+        <th>groupName</th>
     </tr>
 
-    <c:forEach items="${requestScope.teachers}" var="teacher">
+    <c:forEach items="${requestScope.groups}" var="group">
         <tr class="danger">
-            <td>${user.id}</td>
-            <td>${user.userName}</td>
-            <td>${user.age}</td>
+            <td>${group.recId}</td>
+            <td>${group.lastModDateTime}</td>
+            <td>${group.createdDateTime}</td>
+            <td>${group.lastModBy}</td>
+            <td>${group.createdBy}</td>
+            <td>${group.groupName}</td>
         </tr>
     </c:forEach>
 </table>

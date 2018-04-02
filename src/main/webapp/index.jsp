@@ -1,5 +1,10 @@
+<%@include file="WEB-INF/jsp/nav.jsp" %>
 <html>
+<head>
+
+</head>
 <body>
-<h2>Hello World!</h2>
+
+
 </body>
 </html>

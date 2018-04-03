@@ -1,16 +1,14 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script src="../../jquery/jquery-3.3.1.min.js"></script>
-<script src="../../bootstrap/js/bootstrap.js"></script>
+<%@include file="head/head.jsp" %>
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="./../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../bootstrap/table/bootstrap-table.css">
+    <link rel="stylesheet" href="bootstrap/table/bootstrap-table.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-fixed-top navbar-has-shadow">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -25,8 +23,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="group/showGroups">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="group/showGroups">Link</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
